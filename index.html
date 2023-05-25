@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>	
+		<title>Jogo adivinha</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<script src="javasc.js"></script>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<header class="cabecalho">
+		<img src="Imagens/logosf.png" class="logo">
+		</header>
+		<main class="corpo">
+			<section class="titulo">
+				Adivinhe o numero 
+			</section>
+			<section class="tentativas">
+				Tentativa:<label id="labelTentativas" >0</label>
+			</section>
+			<section class="pontos">
+				Pontos:<label id="labelPontos" >100</label>
+			</section>
+		</main>
+		<main class="corpo2">
+			<section class="txtanteriores">
+				<h3>Tentativas anteriores</h3><br/>
+				<label id="labelTentativasAnteriores">...</label>
+			</section>
+		</main>
+		<main class="corpo6">
+			<button onclick="NovoJogo()" class="verifica">Novo Jogo</button>
+		</main>
+		<main class="corpo3">
+			<section class="acerto">
+				<label id="labelAcerto">...</label>
+			</section>
+		</main>
+		<main class="corpo5">
+			<section class="txtinput">
+				<input type="text" name="inputtentativa "id="inputtentativa" class="inputtentativa2" placeholder="Tente acertar o numero aqui!!">
+			</section>
+		</main>
+		<main class="corpo6">
+			<button onclick="verifica()" class="verifica">Verificar se o numero digitado está correto</button>
+		</main>
+		<main class="corpo4">
+			<section class="txtAcerto">
+				Resposta:<label id="labelnumcerto"><font class="numeroAleatorio">XX</font></label>
+			</section>
+		</main>
+		<footer class="rodape">
+			<h1 class="txtrodape">Todos os direitos são reservados</h1>
+		</footer>
+	</body>
+</html>
